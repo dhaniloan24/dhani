@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A clear and secure way to learn about personal loan options.">
+  <title>Your Finance Brand | Loan Enquiry</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Home">
+      <span class="brand-mark">F</span>
+      <span><strong>Your Finance Brand</strong><small>Loan Enquiry Portal</small></span>
+    </a>
+    <a class="header-link" href="#apply">Start an enquiry <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> PERSONAL LOAN ENQUIRIES</p>
+        <h1>Plan your next step with <em>clarity.</em></h1>
+        <p class="hero-text">Explore your options and send a basic enquiry. Eligibility, rates, fees and approval are subject to verification by the actual lender.</p>
+        <a class="primary-btn" href="#apply">Make an enquiry <span aria-hidden="true">→</span></a>
+        <div class="trust-note"><span aria-hidden="true">✓</span> No approval promises. No payment requested on this demo page.</div>
+      </div>
+      <div class="hero-card" aria-label="Loan planning illustration">
+        <div class="card-top"><span>LOAN PLANNING</span><span class="card-icon">↗</span></div>
+        <div class="card-graphic"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="card-bottom"><div><small>Make informed decisions</small><strong>Understand your options</strong></div><span class="check">✓</span></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Important information">
+      <article><span class="benefit-icon">01</span><h3>Clear information</h3><p>Review applicable rates, fees and repayment terms before making a decision.</p></article>
+      <article><span class="benefit-icon">02</span><h3>Privacy first</h3><p>This starter form does not ask for Aadhaar, PAN, bank details, passwords or OTPs.</p></article>
+      <article><span class="benefit-icon">03</span><h3>No guarantees</h3><p>Submitting an enquiry is not a loan approval or a promise of disbursement.</p></article>
+    </section>
+
+    <section class="application" id="apply">
+      <div class="section-intro">
+        <p class="eyebrow">GET STARTED</p>
+        <h2>Loan enquiry form</h2>
+        <p>Share only basic contact details for this demo. The form will not send or store your information.</p>
+        <div class="notice"><strong>Before you proceed</strong><br>Replace the placeholder brand with your own authorized business identity. Add a privacy policy and secure backend before collecting real applicant data.</div>
+      </div>
+      <form id="enquiry-form" class="form-card">
+        <div class="form-row">
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" autocomplete="name" required maxlength="80" placeholder="Enter your name">
+        </div>
+        <div class="form-row">
+          <label for="phone">Mobile number</label>
+          <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" pattern="[0-9 +()-]{10,18}" required placeholder="Enter contact number">
+        </div>
+        <div class="form-row">
+          <label for="loanAmount">Estimated loan amount</label>
+          <select id="loanAmount" name="loanAmount" required>
+            <option value="">Select an amount</option>
+            <option>Under ₹50,000</option>
+            <option>₹50,000–₹1,00,000</option>
+            <option>₹1,00,001–₹3,00,000</option>
+            <option>₹3,00,001–₹5,00,000</option>
+            <option>Above ₹5,00,000</option>
+          </select>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent" required> <span>I understand this is a demo enquiry form and my information will not be submitted to a lender.</span></label>
+        <button class="primary-btn submit-btn" type="submit">Check form <span aria-hidden="true">→</span></button>
+        <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+        <p class="form-footnote">Never pay an upfront fee to a person or account claiming it guarantees loan approval. Verify the lender and all charges independently.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">F</span><strong>Your Finance Brand</strong></div>
+    <p>This is a starter template, not a lender, bank, or official finance-company website. No loan is offered or approved here.</p>
+    <p class="copyright">© <span id="year"></span> Your Finance Brand · Replace with your registered business details.</p>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
